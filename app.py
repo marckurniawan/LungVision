@@ -336,7 +336,7 @@ elif page == "🔬 Prediksi Pasien":
         with d2:
             gender = st.selectbox("Jenis Kelamin (Gender) *", options=[1, 0], format_func=lambda x: "Pria" if x == 1 else "Wanita")
 
-        st.markdown("#### 🌍 Faktor Lingkungan & Gaya Hidup *(Skala 1–8)*")
+        st.markdown("#### 🌍 Faktor Lingkungan & Gaya Hidup *(Skala 1–10)*")
         e1, e2, e3, e4 = st.columns(4)
         with e1:
             air_pollution   = st.slider("Air Pollution",       1, 8, 4)
@@ -351,15 +351,14 @@ elif page == "🔬 Prediksi Pasien":
             balanced_diet   = st.slider("Balanced Diet",       1, 8, 4)
             obesity         = st.slider("Obesity",             1, 8, 4)
 
-        st.markdown("#### 🚬 Faktor Merokok *(Skala 1–8)*")
+        st.markdown("#### 🚬 Faktor Merokok *(Skala 1–10)*")
         s1, s2, s3 = st.columns(3)
         with s1:
             smoking         = st.slider("Smoking",             1, 8, 4)
-            smoking1        = st.slider("Smoking.1",           1, 8, 4)
         with s2:
             passive_smoker  = st.slider("Passive Smoker",      1, 8, 4)
 
-        st.markdown("#### 🩺 Gejala Klinis *(Skala 1–9)*")
+        st.markdown("#### 🩺 Gejala Klinis *(Skala 1–10)*")
         g1, g2, g3, g4 = st.columns(4)
         with g1:
             chest_pain      = st.slider("Chest Pain",          1, 9, 3)
@@ -371,7 +370,6 @@ elif page == "🔬 Prediksi Pasien":
             wheezing        = st.slider("Wheezing",            1, 9, 3)
         with g3:
             swallowing_diff = st.slider("Swallowing Difficulty",  1, 9, 3)
-            swallowing_diff1= st.slider("Swallowing Difficulty.1",1, 9, 3)
             clubbing        = st.slider("Clubbing of Finger Nails",1, 9, 3)
         with g4:
             frequent_cold   = st.slider("Frequent Cold",       1, 9, 3)
@@ -395,7 +393,7 @@ elif page == "🔬 Prediksi Pasien":
             'Balanced Diet':          [balanced_diet],
             'Obesity':                [obesity],
             'Smoking':                [smoking],
-            'Smoking.1':              [smoking1],
+            'Smoking.1':              [smoking],
             'Passive Smoker':         [passive_smoker],
             'Chest Pain':             [chest_pain],
             'Coughing of Blood':      [coughing_blood],
@@ -404,7 +402,7 @@ elif page == "🔬 Prediksi Pasien":
             'Shortness of Breath':    [shortness_breath],
             'Wheezing':               [wheezing],
             'Swallowing Difficulty':  [swallowing_diff],
-            'Swallowing Difficulty.1':[swallowing_diff1],
+            'Swallowing Difficulty.1':[swallowing_diff],
             'Clubbing of Finger Nails':[clubbing],
             'Frequent Cold':          [frequent_cold],
             'Dry Cough':              [dry_cough],
