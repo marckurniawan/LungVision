@@ -288,26 +288,26 @@ if page == "🏠 Dashboard":
     img_col1, img_col2, img_col3 = st.columns(3)
     cm_img  = load_img(os.path.join("results", "confusion_matrix", "logistic_regression_Baseline.png"))
     fi_img  = load_img(os.path.join("results", "feature_importance", "logistic_regression_Baseline.png"))
-    roc_img = load_img(os.path.join("results", "roc_curve", "logistic_regression_Baseline.png"))
+    roc_img = load_img(os.path.join("results", "roc_curve", "logistic_regression_baseline.png"))
 
     with img_col1:
         st.markdown("**Confusion Matrix**")
         if cm_img:
             st.image(cm_img, use_container_width=True)
         else:
-            st.caption("📁 Letakkan file di: `results/confusion_matrix/logistic_regression_Baseline.png`")
+            st.caption("📁 Letakkan file di: `results/confusion_matrix/logistic_regression_baseline.png`")
     with img_col2:
         st.markdown("**Feature Importance**")
         if fi_img:
             st.image(fi_img, use_container_width=True)
         else:
-            st.caption("📁 Letakkan file di: `results/feature_importance/logistic_regression_Baseline.png`")
+            st.caption("📁 Letakkan file di: `results/feature_importance/logistic_regression_baseline.png`")
     with img_col3:
         st.markdown("**ROC Curve**")
         if roc_img:
             st.image(roc_img, use_container_width=True)
         else:
-            st.caption("📁 Letakkan file di: `results/roc_curve/logistic_regression_Baseline.png`")
+            st.caption("📁 Letakkan file di: `results/roc_curve/logistic_regression_baseline.png`")
 
     st.caption("👈 Klik **Evaluasi Model** di sidebar untuk melihat semua visualisasi lengkap.")
 
@@ -647,11 +647,11 @@ project/
 │   └── logistic_regression.pkl
 ├── results/
 │   ├── confusion_matrix/
-│   │   └── logistic_regression_Baseline.png
+│   │   └── logistic_regression_baseline.png
 │   ├── feature_importance/
-│   │   └── logistic_regression_Baseline.png
+│   │   └── logistic_regression_baseline.png
 │   ├── roc_curve/
-│   │   └── logistic_regression_Baseline.png
+│   │   └── logistic_regression_baseline.png
 │   ├── baseline_metrics.csv
 │   └── final_comparison_chart.png
 └── src/
