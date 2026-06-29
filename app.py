@@ -286,8 +286,8 @@ if page == "🏠 Dashboard":
     st.markdown('<div class="section-header">🖼️ Preview Visualisasi Model</div>', unsafe_allow_html=True)
 
     img_col1, img_col2, img_col3 = st.columns(3)
-    cm_img  = load_img(os.path.join("results", "confusion_matrix", "logistic_regression_Baseline.png"))
-    fi_img  = load_img(os.path.join("results", "feature_importance", "logistic_regression_Baseline.png"))
+    cm_img  = load_img(os.path.join("results", "confusion_matrix", "logistic_regression_baseline.png"))
+    fi_img  = load_img(os.path.join("results", "feature_importance", "logistic_regression_baseline.png"))
     roc_img = load_img(os.path.join("results", "roc_curve", "logistic_regression_baseline.png"))
 
     with img_col1:
