@@ -351,7 +351,7 @@ elif page == "🔬 Prediksi Pasien":
             balanced_diet   = st.slider("Balanced Diet",       1, 8, 4)
             obesity         = st.slider("Obesity",             1, 8, 4)
 
-        st.markdown("#### 🚬 Faktor Merokok *(Skala 1–9)*")
+        st.markdown("#### 🚬 Faktor Merokok *(Skala 1–8)*")
         s1, s2, s3 = st.columns(3)
         with s1:
             smoking         = st.slider("Smoking",             1, 8, 4)
