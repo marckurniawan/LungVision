@@ -336,7 +336,7 @@ elif page == "🔬 Prediksi Pasien":
         with d2:
             gender = st.selectbox("Jenis Kelamin (Gender) *", options=[1, 0], format_func=lambda x: "Pria" if x == 1 else "Wanita")
 
-        st.markdown("#### 🌍 Faktor Lingkungan & Gaya Hidup *(Skala 1–10)*")
+        st.markdown("#### 🌍 Faktor Lingkungan & Gaya Hidup *(Skala 1–8)*")
         e1, e2, e3, e4 = st.columns(4)
         with e1:
             air_pollution   = st.slider("Air Pollution",       1, 8, 4)
@@ -351,14 +351,14 @@ elif page == "🔬 Prediksi Pasien":
             balanced_diet   = st.slider("Balanced Diet",       1, 8, 4)
             obesity         = st.slider("Obesity",             1, 8, 4)
 
-        st.markdown("#### 🚬 Faktor Merokok *(Skala 1–10)*")
+        st.markdown("#### 🚬 Faktor Merokok *(Skala 1–9)*")
         s1, s2, s3 = st.columns(3)
         with s1:
             smoking         = st.slider("Smoking",             1, 8, 4)
         with s2:
             passive_smoker  = st.slider("Passive Smoker",      1, 8, 4)
 
-        st.markdown("#### 🩺 Gejala Klinis *(Skala 1–10)*")
+        st.markdown("#### 🩺 Gejala Klinis *(Skala 1–9)*")
         g1, g2, g3, g4 = st.columns(4)
         with g1:
             chest_pain      = st.slider("Chest Pain",          1, 9, 3)
