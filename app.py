@@ -508,9 +508,9 @@ elif page == "📊 Evaluasi Model":
     st.markdown("---")
 
     model_options = {
-        "Logistic Regression (Baseline) ⭐": "logistic_regression_Baseline",
-        "Random Forest (Baseline)":          "random_forest_Baseline",
-        "XGBoost (Baseline)":                "xgboost_Baseline",
+        "Logistic Regression (Baseline) ⭐": "logistic_regression_baseline",
+        "Random Forest (Baseline)":          "random_forest_baseline",
+        "XGBoost (Baseline)":                "xgboost_baseline",
         "Logistic Regression (Fuzzy)":       "logistic_regression_fuzzy",
         "Random Forest (Fuzzy)":             "random_forest_fuzzy",
         "XGBoost (Fuzzy)":                   "xgboost_fuzzy",
