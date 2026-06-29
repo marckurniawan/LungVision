@@ -371,8 +371,8 @@ elif page == "🔬 Prediksi Pasien":
         with g3:
             swallowing_diff = st.slider("Swallowing Difficulty",  1, 9, 3)
             clubbing        = st.slider("Clubbing of Finger Nails",1, 9, 3)
-        with g4:
             frequent_cold   = st.slider("Frequent Cold",       1, 9, 3)
+        with g4:
             dry_cough       = st.slider("Dry Cough",           1, 9, 3)
             snoring         = st.slider("Snoring",             1, 9, 3)
 
